@@ -72,6 +72,13 @@ app.get("/", (req, res) => {
   });
 });
 
+app.get("/", (req, res) => {
+  res.json({
+    success: true,
+    message: "Keen Overseas API Running 🚀",
+  });
+});
+
 app.use("/api/contact", contactRoutes);
 app.use("/api/admin", adminRoutes);
 app.use("/api/admin/enquiries", enquiryRoutes);

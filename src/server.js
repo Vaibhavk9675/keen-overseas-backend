@@ -6,7 +6,7 @@ const startServer = async () => {
   await connectDB();
 
   app.listen(env.PORT, () => {
-    console.log("Server Running");
+    console.log(`🚀 Server Running`);
   });
 };
 
