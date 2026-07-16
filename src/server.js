@@ -3,11 +3,18 @@ import connectDB from "./config/db.js";
 import env from "./config/env.js";
 
 const startServer = async () => {
-  await connectDB();
+  try {
+    console.log("Step 1");
 
-  app.listen(env.PORT, () => {
-    console.log(`🚀 Server Running`);
-  });
+    await connectDB();
+    console.log("Step 2");
+
+    app.listen(env.PORT, () => {
+      console.log(`Server running on ${env.PORT}`);
+    });
+  } catch (err) {
+    console.error(err);
+  }
 };
 
 startServer();
