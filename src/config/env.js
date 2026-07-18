@@ -9,7 +9,7 @@ const env = {
 
   CLIENT_URL: process.env.CLIENT_URL,
 
-  MONGO_URI: process.env.MONGODB_URI,
+  MONGO_URI: process.env.MONGO_URI,
 
   EMAIL_USER: process.env.EMAIL_USER,
 

@@ -6,7 +6,7 @@ const startServer = async () => {
   try {
     console.log("Step 1");
 
-    // await connectDB();
+    await connectDB();
 
     console.log("Step 2");
 
