@@ -1,6 +1,6 @@
 import express from "express";
 
-import { getDashboardStats } from "../controllers/dashboardController.js";
+import { getDashboardStats } from "../controllers/dashboardcontroller.js";
 import { getEnquiries } from "../controllers/enquiryController.js";
 
 const router = express.Router();
