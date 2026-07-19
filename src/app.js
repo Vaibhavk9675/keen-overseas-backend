@@ -11,12 +11,11 @@ import env from "./config/env.js";
 import contactRoutes from "./routes/contactRoutes.js";
 import enquiryRoutes from "./routes/enquiryRoutes.js";
 
-
-
 // Middlewares
 import errorHandler from "./middleware/errorHandler.js";
 
 const app = express();
+app.set("trust proxy", 1);
 
 /* ----------------------------- Security ----------------------------- */
 
